@@ -1,0 +1,51 @@
+Je veux un portfolio, single page, le techno que je veux utilisé sont :
+- Astro
+- Tailwind CSS
+
+J'ai prix l'exemple sur le site de https://karimbouzgarne.fr
+
+Je veux une interface moderne avec des animations intermédiaires .
+Code couleur : oklch(0.52 0.14 247.06) adate au autre
+
+-----------------------
+Voici ce qu'on va mettre dedans :
+Reformule bien les phrase :
+
+Section 1 :
+- Titre : Vous recherchez un développeur ?
+- Ça tombe bien ! Je suis passionné par le web et j'ai pu acquérir un certain nombre de compétences depuis mes débuts dans le web il y a déjà plus de 10 ans.
+Met un call to action de deux bouton , "télécharger CV" et "Me contacter"
+
+Section 2 :
+A propos de moi, prend sur mon CV
+
+Section 3 :
+Mes compétence avec des icones :
+- Langage
+PHP ('Avancé)
+JavaScript (Intermédiaire)
+Python (Débutant)
+Windev (Débutant)
+- Framework
+Symfony (Avancé)
+CodeIgniter (Intermédiaire)
+Bootstrap (Avancé)
+AngularJS (Débutant)
+React / ReactNative (Débutant)
+- Outils & Technologies
+Git (Intermédiaire)
+Docker (Intermédiaire)
+IA / Machine Learning / MCP (Débutant)
+
+Section 4 : Mes réalisations
+Je vais lister , tu va mettre en forme de card avec un icone dans la banière, en titre le nom de l'application, un petit description en bas et puis les icones des techno utilisé
+- "Plateforme SAAS" : SAAS de gestion de pointage et de ronde / Symfony, MySQL, APIPlateform, MySQL
+- "Système CRM" : Solution CRM complète pour la gestion des relations clients et des ventes. / Symfony, MySQL, APIPlateform, MySQL
+- "Freelance Dispo" : Mise en relation entre Freelance et entreprise dans le domaine du tech / Symfony, MySQL, Stripe
+- "intégration IA" : Mise en place de fonctionnalités basées sur l’IA, incluant l’analyse de données / Neuron AI, OpenAI, MCP
+
+Section 5 : Contact
+Juste affichage de mes contact:
+- Téléphone : +261 38 72 158 90
+- Mail : +261 38 72 158 90
+- Linkedin : https://www.linkedin.com/in/allin-ramanampisoa-784298173
