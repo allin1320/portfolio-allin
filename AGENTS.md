@@ -40,3 +40,10 @@
 - 2-space indentation
 - Single quotes for strings
 - Semicolons required
+
+## Active Technologies
+- TypeScript (Astro default) + Astro, TailwindCSS (001-single-page-portfolio)
+- N/A (static site) (001-single-page-portfolio)
+
+## Recent Changes
+- 001-single-page-portfolio: Added TypeScript (Astro default) + Astro, TailwindCSS
