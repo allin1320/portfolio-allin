@@ -1,0 +1,76 @@
+---
+import { skills } from '../data/skills';
+---
+
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+      Mes compétences
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Languages -->
+      <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+          <svg class="w-6 h-6 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+          Langages
+        </h3>
+        <ul class="space-y-2">
+          {skills.filter(s => s.category === 'Langage').map((skill) => (
+            <li class="flex justify-between items-center">
+              <span class="text-gray-700">{skill.name}</span>
+              <div class="flex space-x-1">
+                {Array.from({ length: 5 }, (_, i) => (
+                  <div class={`w-2 h-2 rounded-full ${i < skill.proficiencyLevel ? 'bg-blue-600' : 'bg-gray-300'}`}></div>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <!-- Frameworks -->
+      <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+          <svg class="w-6 h-6 mr-2 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          </svg>
+          Frameworks
+        </h3>
+        <ul class="space-y-2">
+          {skills.filter(s => s.category === 'Framework').map((skill) => (
+            <li class="flex justify-between items-center">
+              <span class="text-gray-700">{skill.name}</span>
+              <div class="flex space-x-1">
+                {Array.from({ length: 5 }, (_, i) => (
+                  <div class={`w-2 h-2 rounded-full ${i < skill.proficiencyLevel ? 'bg-green-600' : 'bg-gray-300'}`}></div>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <!-- Outils & Technologies -->
+      <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+          <svg class="w-6 h-6 mr-2 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+          </svg>
+          Outils & Technologies
+        </h3>
+        <ul class="space-y-2">
+          {skills.filter(s => s.category === 'Outils & Technologies').map((skill) => (
+            <li class="flex justify-between items-center">
+              <span class="text-gray-700">{skill.name}</span>
+              <div class="flex space-x-1">
+                {Array.from({ length: 5 }, (_, i) => (
+                  <div class={`w-2 h-2 rounded-full ${i < skill.proficiencyLevel ? 'bg-purple-600' : 'bg-gray-300'}`}></div>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
