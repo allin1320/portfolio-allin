@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  padding-top: 4rem; /* Account for fixed navbar height */
+}
+
 /* Custom styles */
 :root {
   --primary-color: oklch(0.52 0.14 247.06);
